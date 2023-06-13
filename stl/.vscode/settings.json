@@ -1,0 +1,27 @@
+{
+  "files.associations": {
+    "__bit_reference": "cpp",
+    "tuple": "cpp",
+    "typeinfo": "cpp",
+    "__nullptr": "cpp",
+    "type_traits": "cpp",
+    "memory": "cpp",
+    "__mutex_base": "cpp",
+    "__split_buffer": "cpp",
+    "algorithm": "cpp",
+    "bit": "cpp",
+    "bitset": "cpp",
+    "chrono": "cpp",
+    "string": "cpp",
+    "unordered_map": "cpp",
+    "vector": "cpp",
+    "__threading_support": "cpp",
+    "__hash_table": "cpp",
+    "__node_handle": "cpp",
+    "atomic": "cpp",
+    "ios": "cpp",
+    "istream": "cpp",
+    "locale": "cpp",
+    "system_error": "cpp"
+  }
+}
