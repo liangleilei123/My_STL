@@ -7,7 +7,6 @@
    1. 基类中定义节点基类的指针，使用`prev`和`next`指针实现迭代器的前进和后退操作。
    2. 子类中重载`*`和`->`用于读取节点子类中保存的数据成员。重载`++`,`--`实现迭代器的移动
 3. 实现list
-   1. 
 
 
 
@@ -124,7 +123,7 @@ template<class T, class Alloc>
 
         list<T, Alloc> carry;
         list<T, Alloc> counter[64];          //list类型的数组
-        int fill = 0;
+        int fill = 0;			//数组下标
         while (!empty()) {
             carry.splice(carry.begin(), *this, begin());
             int i = 0;
@@ -144,7 +143,7 @@ template<class T, class Alloc>
 
 解析：函数中定义了一个链表`carry`和一个链表类型的数组`counter[64]`。实现排序的逻辑是每次把
 
-1. 待排链表的头节点取出，插入`carry`
+1. 待排链表的头节点取出，插入`carry`(中转链表)
 2. i = 0 
 3. `while:`如果`i<fill && counter[i]`不为空，
    1. 把`carry`和`counter[i]`合并。（`carry`和`counter[0]`进行合并的时候永远是两个数的合并，方便排序。当`i > 0`时，也会有序合并，以保证`counter`中的链表都是有序的）
